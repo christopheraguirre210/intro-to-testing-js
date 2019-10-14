@@ -19,11 +19,14 @@ function isEven(number) {
     return number % 2 === 0;
 }
 
-function isVowel(x) {
+function isVowel(value) {
+    return (value == "A" || value == "a"
+        || value == "E" || value == "e"
+        || value == "I" || value == "i"
+        || value == "O" || value == "o"
+        || value == "U" || value == "u");
+}
 
-    var result;
-
-    result = x == "A" || x == "E" || x == "I" || x == "O" || x == "U"
-            x == "a" || x == "e" || x == "i" || x == "o" || x == "u";
-    return result;
+function add(num1, num2){
+    return parseInt(num1) + parseInt(num2);
 }
